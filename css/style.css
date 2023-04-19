@@ -18,7 +18,7 @@ body{
 }
 
 .box{
-    width: 800px;
+    width: 600px;
     height: 500px;
     object-fit: contain;
     display: flex;
