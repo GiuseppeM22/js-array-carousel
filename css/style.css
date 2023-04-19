@@ -43,3 +43,8 @@ body{
     transform: scale(1.2);
     cursor: pointer;
 }
+
+.hidden{
+    display: none;
+}
+
