@@ -16,18 +16,45 @@ let imageCurrent = 0
              img.classList.remove("hidden")
         }
 
-        btnRight.addEventListener ("click", function(){
-    
-            if (i==imageCurrent+1)
-                img.classList.remove("hidden")
-                else{
-                img.classList.add("hidden")
-
-                }
         
-            }); 
         }
 
+ let imagesEle = document.querySelectorAll("#boxImage img")
 
+  btnRight.addEventListener ("click", function(){
+
+        if (imageCurrent < 4){   
+            for (let i = 0; i < imagesEle.length; i++)
+                if (i == imageCurrent+1 )
+                    imagesEle[i].classList.remove("hidden")
+                    else{
+                    imagesEle[i].classList.add("hidden")
+
+                    }
+            imageCurrent++
+        }
+
+            
+                        
+        }); 
+
+        btnLeft.addEventListener ("click", function(){
+
+            if (imageCurrent > 0){   
+                for (let i = 0; i < imagesEle.length; i++)
+                    if (i == imageCurrent-1 )
+                        imagesEle[i].classList.remove("hidden")
+                        else{
+                        imagesEle[i].classList.add("hidden")
+    
+                        }
+                imageCurrent--
+            }
+    
+                
+                            
+            }); 
+
+    
 
  
