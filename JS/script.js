@@ -5,7 +5,6 @@ let btnRight = document.getElementById("rightButton")
 let imageCurrent = 0
 
 
-btnRight.addEventListener ("click", function(){
     
     for (let i = 0; i < images.length; i++) {
         let img = document.createElement("img")
@@ -15,15 +14,11 @@ btnRight.addEventListener ("click", function(){
         
         if (i == imageCurrent){
              img.classList.remove("hidden")
-        } else if (i != imageCurrent){
-             img.classList.add("hidden")
-
         }
-
-        
     }
-    
-    imageCurrent++;
+
+
+ btnRight.addEventListener ("click", function(){
     
 
 
