@@ -15,11 +15,19 @@ let imageCurrent = 0
         if (i == imageCurrent){
              img.classList.remove("hidden")
         }
-    }
 
-
- btnRight.addEventListener ("click", function(){
+        btnRight.addEventListener ("click", function(){
     
+            if (i==imageCurrent+1)
+                img.classList.remove("hidden")
+                else{
+                img.classList.add("hidden")
+
+                }
+        
+            }); 
+        }
 
 
-}); 
+
+ 
